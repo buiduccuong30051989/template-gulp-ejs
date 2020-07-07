@@ -1,0 +1,20 @@
+extends _core
+
+block body
+  block header
+    -
+      var mbItems = [
+        { href: '#', text: '店舗を探す' },
+        { href: '#', text: '物件一覧' },
+        { href: '#', text: 'テンポスマートとは' },
+        { href: '#', text: '店舗の売却' }
+      ];
+    +header({
+      style: 'login',
+      items: mbItems,
+      active: 0
+    })
+  .main-content
+    block main
+    block footer
+      +footer()
